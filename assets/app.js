@@ -340,9 +340,7 @@ window.showSection = function(sectionId) {
   // 헤더 바로 아래로 부드럽게 스크롤
   const header = document.getElementById("main-header");
   const headerH = header ? header.offsetHeight : 80;
-  const topBar = document.querySelector("body > div:first-child");
-  const topBarH = topBar ? topBar.offsetHeight : 40;
-  window.scrollTo({ top: topBarH + headerH, behavior: "smooth" });
+  window.scrollTo({ top: headerH, behavior: "smooth" });
 };
 
 function hideAllSections() {
